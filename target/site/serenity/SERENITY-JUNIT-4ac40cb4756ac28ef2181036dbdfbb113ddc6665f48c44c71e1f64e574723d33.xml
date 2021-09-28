@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Delete a User From OrangeHRM" skipped="0" tests="2" time="97.96" timestamp="2021-09-28 12:58:29"><testcase name="Delete a User From OrangeHRM"><error message="Timed out after 2 seconds. Element not available&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'BLIND', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'BLIND', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException">Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BLIND', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BLIND', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown</error><system-err>Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BLIND', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BLIND', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown&#13;
+auto.orangehrm.utils.Utils.waitForClick(Utils.java:48)&#13;
+auto.orangehrm.pages.UserPage.confirmDelete(UserPage.java:381)&#13;
+auto.orangehrm.steps.DeleteUserSteps.confirmDelete(DeleteUserSteps.java:48)&#13;
+auto.orangehrm.StepsDefinitions.DeleteUSerStepDefinition.confirmDelete(DeleteUSerStepDefinition.java:35)&#13;
+✽.The user confirms that the user were deleted(file:///C:/Desarrollo/eclipse-workspace/orangehrm/src/test/resources/features/deleteuser.feature:7)&#13;
+</system-err></testcase></testsuite>

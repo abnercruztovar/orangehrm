@@ -1,0 +1,6 @@
+auto\orangehrm\steps\LoginSteps.class
+auto\orangehrm\runners\LoginUserRunner.class
+auto\orangehrm\steps\MathsStepDefinitions.class
+auto\orangehrm\acceptancetests\AcceptanceTestSuite.class
+auto\orangehrm\pages\LoginPage.class
+auto\orangehrm\StepsDefinitions\LoginStepDefinitions.class
