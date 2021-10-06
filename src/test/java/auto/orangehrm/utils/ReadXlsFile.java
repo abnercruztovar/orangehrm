@@ -151,7 +151,6 @@ public class ReadXlsFile {
 		FileInputStream inputStream = new FileInputStream(file);
 		XSSFWorkbook newWorkbook = new XSSFWorkbook(inputStream);
 
-		List<String> lstSheets = new ArrayList<>();
 		for (int i = 0; i < newWorkbook.getNumberOfSheets(); i++) {
 			if ("sheet1".equalsIgnoreCase(newWorkbook.getSheetName(i))) {
 				continue;
