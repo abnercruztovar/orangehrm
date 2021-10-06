@@ -34,8 +34,6 @@ public class WriteXlsFile {
 				.orElse(GB.of(newWorkbook.createSheet(sheetName + "_" + "users"))
 						.push(s -> s.createRow(0).createCell(0)).build());
 
-//		XSSFRow row = ofNullable(newSheet.getRow(0)).orElse(newSheet.createRow(0));
-
 		int lastRow = newSheet.getLastRowNum();
 		for (int i = 0; i < dataToWrite.length; i++) {
 			XSSFRow newRow = newSheet.createRow(lastRow + i);

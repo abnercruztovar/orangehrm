@@ -23,11 +23,11 @@ import net.thucydides.core.annotations.Step;
  */
 public class GetUserListSteps {
 
-	public static final String XSLX_FILE_PATH = "/orangehrm/src/test/resources/files/OrangeHRMUserRoles.xlsx";
+	public static final String XSLX_FILE_PATH = "src/test/resources/files/OrangeHRMUserRoles.xlsx";
 	LoginPage lPage;
 	UserPage uPage;
 
-	private Map<String, WebElement> lstElements = new HashMap<>();
+	private Map<String, List<WebElement>> lstElements = new HashMap<>();
 
 	private WriteXlsFile writeFile;
 	private ReadXlsFile readFile;
@@ -46,7 +46,7 @@ public class GetUserListSteps {
 		List<String> roles = xlsFile.getRolesToWork(XSLX_FILE_PATH, "Sheet1");
 
 		for (int i = 0; i < roles.size(); i++) {
-			lstElements.put(roles.get(i), (WebElement) uPage.searchUsersByRole(roles.get(i)));
+			lstElements.put(roles.get(i), uPage.searchUsersByRole(roles.get(i)));
 		}
 	}
 
@@ -54,10 +54,10 @@ public class GetUserListSteps {
 	public void saveUserInfo() throws IOException {
 		List<String> roles = lstElements.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
 		for (String string : roles) {
-			List<WebElement> results = lstElements.entrySet().stream().map(Map.Entry::getValue)
-					.collect(Collectors.toList());
-			String[] infoToPersist = results.stream().map(e -> e.getText()).collect(Collectors.toList())
-					.toArray(new String[lstElements.size()]);
+
+			String[] infoToPersist = lstElements.get(string).stream().map(l -> l.getText()).collect(Collectors.toList())
+					.toArray(new String[lstElements.get(string).size()]);
+
 			WriteXlsFile xlsFile = new WriteXlsFile();
 			xlsFile.writeXlsFile(XSLX_FILE_PATH, string, infoToPersist);
 		}

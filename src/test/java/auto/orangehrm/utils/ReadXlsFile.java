@@ -6,6 +6,7 @@ package auto.orangehrm.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -157,6 +158,10 @@ public class ReadXlsFile {
 			}
 			newWorkbook.removeSheetAt(i);
 		}
+		inputStream.close();
+		FileOutputStream outputStream = new FileOutputStream(file);
+		newWorkbook.write(outputStream);
+		outputStream.close();
 
 	}
 
