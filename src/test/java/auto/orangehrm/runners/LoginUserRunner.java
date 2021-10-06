@@ -15,5 +15,4 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features/login.feature", glue = "auto.orangehrm")
 public class LoginUserRunner {
-
 }

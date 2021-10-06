@@ -4,7 +4,9 @@
 package auto.orangehrm.pages;
 
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
+import auto.orangehrm.utils.Utils;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 
@@ -37,6 +39,12 @@ public class AdminPage extends PageObject {
 
 	@FindBy(id = "btnSave")
 	private WebElementFacade btnSave;
+
+	@FindBy(id = "resetBtn")
+	private WebElementFacade btnReset;
+
+	@FindBy(id = "searchSystemUser_userType")
+	private WebElementFacade lstRole;
 
 	/**
 	 * @return the adminMenu
@@ -148,6 +156,47 @@ public class AdminPage extends PageObject {
 	 */
 	public void setBtnSave(WebElementFacade btnSave) {
 		this.btnSave = btnSave;
+	}
+
+	/**
+	 * @return the lstRole
+	 */
+	public WebElementFacade getLstRole() {
+		return lstRole;
+	}
+
+	/**
+	 * @param lstRole the lstRole to set
+	 */
+	public void setLstRole(WebElementFacade lstRole) {
+		this.lstRole = lstRole;
+	}
+
+	/**
+	 * Realiza la busqueda de usuarios por rol
+	 * 
+	 * @param roleName
+	 */
+	public void searchUsersByRol(String roleName) {
+		btnReset.click();
+		Utils.waitForClick(getDriver(), lstRole, 40);
+		Select oRole = new Select(getLstRole());
+		oRole.selectByVisibleText(roleName);
+		tblSearchResults.click();
+	}
+
+	/**
+	 * @return the btnReset
+	 */
+	public WebElementFacade getBtnReset() {
+		return btnReset;
+	}
+
+	/**
+	 * @param btnReset the btnReset to set
+	 */
+	public void setBtnReset(WebElementFacade btnReset) {
+		this.btnReset = btnReset;
 	}
 
 }

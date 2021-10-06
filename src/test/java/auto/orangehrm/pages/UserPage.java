@@ -81,6 +81,9 @@ public class UserPage extends PageObject {
 	@FindBy(id = "searchSystemUser_userName")
 	private WebElementFacade txtSearchUser;
 
+	@FindBy(id = "searchSystemUser_userType")
+	private WebElementFacade searchLstRole;
+
 	/**
 	 * @return the txtUserHeading
 	 */
@@ -373,6 +376,23 @@ public class UserPage extends PageObject {
 
 	}
 
+	/**
+	 * Retorna una lista de WebElements de usuarios por rol
+	 * 
+	 * @param roleName
+	 * @return
+	 */
+	public List<WebElement> searchUsersByRole(String roleName) {
+		Utils.waitForClick(getDriver(), searchLstRole, 40);
+		Select oRole = new Select(getSearchLstRole());
+		oRole.selectByVisibleText(roleName);
+		btnSearchUser.click();
+
+		List<WebElement> rows = getDriver().findElements(By.xpath(RECORDS_LIST));
+
+		return rows;
+	}
+
 	public void deleteUser(WebElement param) {
 		btnDelete.click();
 	}
@@ -395,5 +415,19 @@ public class UserPage extends PageObject {
 	 */
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	/**
+	 * @return the searchLstRole
+	 */
+	public WebElementFacade getSearchLstRole() {
+		return searchLstRole;
+	}
+
+	/**
+	 * @param searchLstRole the searchLstRole to set
+	 */
+	public void setSearchLstRole(WebElementFacade searchLstRole) {
+		this.searchLstRole = searchLstRole;
 	}
 }

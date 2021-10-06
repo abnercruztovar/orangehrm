@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2021 19:27</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2021 08:50</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Login to OrangeHRM
+                                <span class="error-color">Login to OrangeHRM
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -212,6 +212,45 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element not visible exception: Timed out after 2 seconds. Element not available</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.ElementNotVisibleException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>auto.orangehrm.pages.LoginPage.btnLogin(LoginPage.java:47)<br />auto.orangehrm.steps.LoginSteps.clickLogin(LoginSteps.java:34)<br />auto.orangehrm.StepsDefinitions.LoginStepDefinitions.inputUserCredentials(LoginStepDefinitions.java:30)<br />✽.input user credentials "admrin" "admin1r23"(file:///C:/Desarrollo/eclipse-workspace/orangehrm/src/test/resources/features/login.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource4110654101740514312.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Example: {user=&quot;Admin&quot;, pass=&quot;admin123&quot;}" width="1284"/>
@@ -228,9 +267,9 @@
                 <img src="3207c32ec30e2a5d44b879a9d6a9c3b68171768f8951a15780dd9ecbafbc6b42.png" title=" When input user credentials &quot;Admin&quot; &quot;admin123&quot; (completed)" width="1284"/>
                 <img src="3207c32ec30e2a5d44b879a9d6a9c3b68171768f8951a15780dd9ecbafbc6b42.png" title=" Then the user verifies that Dashboard Page is displayed" width="1284"/>
                 <img src="3207c32ec30e2a5d44b879a9d6a9c3b68171768f8951a15780dd9ecbafbc6b42.png" title=" Validate login" width="1284"/>
-                <img src="3aeabcd35594a19c8d9dda0e55b6898cd90431f2105591ae6747bc98eff41c9f.png" title=" Validate login (completed)" width="1284"/>
-                <img src="3aeabcd35594a19c8d9dda0e55b6898cd90431f2105591ae6747bc98eff41c9f.png" title=" Then the user verifies that Dashboard Page is displayed (completed)" width="1284"/>
-                <img src="3aeabcd35594a19c8d9dda0e55b6898cd90431f2105591ae6747bc98eff41c9f.png" title=" Example: {user=&quot;Admin&quot;, pass=&quot;admin123&quot;} (completed)" width="1284"/>
+                <img src="d8229607ae9e0023454568aa8aec9d0859277bafdc21f5e21e941953046bc1cf.png" title=" Validate login (completed)" width="1284"/>
+                <img src="d8229607ae9e0023454568aa8aec9d0859277bafdc21f5e21e941953046bc1cf.png" title=" Then the user verifies that Dashboard Page is displayed (completed)" width="1284"/>
+                <img src="d8229607ae9e0023454568aa8aec9d0859277bafdc21f5e21e941953046bc1cf.png" title=" Example: {user=&quot;Admin&quot;, pass=&quot;admin123&quot;} (completed)" width="1284"/>
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Example: {user=&quot;admin&quot;, pass=&quot;admin123&quot;}" width="1284"/>
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Given The user is on the Orange HRM page" width="1284"/>
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Open browser" width="1284"/>
@@ -245,9 +284,9 @@
                 <img src="c814652e4b35ec4a0b244b100642c7705fa963c5701bc4d4d0de2f0b60779d46.png" title=" When input user credentials &quot;admin&quot; &quot;admin123&quot; (completed)" width="1284"/>
                 <img src="c814652e4b35ec4a0b244b100642c7705fa963c5701bc4d4d0de2f0b60779d46.png" title=" Then the user verifies that Dashboard Page is displayed" width="1284"/>
                 <img src="c814652e4b35ec4a0b244b100642c7705fa963c5701bc4d4d0de2f0b60779d46.png" title=" Validate login" width="1284"/>
-                <img src="3aeabcd35594a19c8d9dda0e55b6898cd90431f2105591ae6747bc98eff41c9f.png" title=" Validate login (completed)" width="1284"/>
-                <img src="3aeabcd35594a19c8d9dda0e55b6898cd90431f2105591ae6747bc98eff41c9f.png" title=" Then the user verifies that Dashboard Page is displayed (completed)" width="1284"/>
-                <img src="3aeabcd35594a19c8d9dda0e55b6898cd90431f2105591ae6747bc98eff41c9f.png" title=" Example: {user=&quot;admin&quot;, pass=&quot;admin123&quot;} (completed)" width="1284"/>
+                <img src="d8229607ae9e0023454568aa8aec9d0859277bafdc21f5e21e941953046bc1cf.png" title=" Validate login (completed)" width="1284"/>
+                <img src="d8229607ae9e0023454568aa8aec9d0859277bafdc21f5e21e941953046bc1cf.png" title=" Then the user verifies that Dashboard Page is displayed (completed)" width="1284"/>
+                <img src="d8229607ae9e0023454568aa8aec9d0859277bafdc21f5e21e941953046bc1cf.png" title=" Example: {user=&quot;admin&quot;, pass=&quot;admin123&quot;} (completed)" width="1284"/>
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Example: {user=&quot;admin&quot;, pass=&quot;&quot;}" width="1284"/>
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Given The user is on the Orange HRM page" width="1284"/>
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Open browser" width="1284"/>
@@ -293,12 +332,6 @@
                 <img src="53ae277b4de08738fc5965b10e0de4cdab1c02f6ec110aef0c86247946ea626e.png" title=" Type user password: admin1r23 (completed)" width="1284"/>
                 <img src="53ae277b4de08738fc5965b10e0de4cdab1c02f6ec110aef0c86247946ea626e.png" title=" Click login" width="1284"/>
                 <img src="3fa37cdb18cd6911fae62aca801fb63940ad516c3ba5c790e4de4ac677084687.png" title=" Click login (completed)" width="1284"/>
-                <img src="3fa37cdb18cd6911fae62aca801fb63940ad516c3ba5c790e4de4ac677084687.png" title=" When input user credentials &quot;admrin&quot; &quot;admin1r23&quot; (completed)" width="1284"/>
-                <img src="3fa37cdb18cd6911fae62aca801fb63940ad516c3ba5c790e4de4ac677084687.png" title=" Then the user verifies that Dashboard Page is displayed" width="1284"/>
-                <img src="3fa37cdb18cd6911fae62aca801fb63940ad516c3ba5c790e4de4ac677084687.png" title=" Validate login" width="1284"/>
-                <img src="3fa37cdb18cd6911fae62aca801fb63940ad516c3ba5c790e4de4ac677084687.png" title=" Validate login (completed)" width="1284"/>
-                <img src="3fa37cdb18cd6911fae62aca801fb63940ad516c3ba5c790e4de4ac677084687.png" title=" Then the user verifies that Dashboard Page is displayed (completed)" width="1284"/>
-                <img src="3fa37cdb18cd6911fae62aca801fb63940ad516c3ba5c790e4de4ac677084687.png" title=" Example: {user=&quot;admrin&quot;, pass=&quot;admin1r23&quot;} (completed)" width="1284"/>
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Example: {user=&quot;&quot;, pass=&quot;&quot;}" width="1284"/>
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Given The user is on the Orange HRM page" width="1284"/>
                 <img src="4f6f740483722d058f111ad8af2dd95ac850b816a2f5e81ed28f03e349b36ff1.png" title=" Open browser" width="1284"/>
@@ -315,7 +348,7 @@
                 <img src="1d51fda9bb4bc6d82254764ee94d34c265c81d5f5cad7047d2d9ea661403809e.png" title=" Validate login" width="1284"/>
                 <img src="1d51fda9bb4bc6d82254764ee94d34c265c81d5f5cad7047d2d9ea661403809e.png" title=" Validate login (completed)" width="1284"/>
                 <img src="1d51fda9bb4bc6d82254764ee94d34c265c81d5f5cad7047d2d9ea661403809e.png" title=" Then the user verifies that Dashboard Page is displayed (completed)" width="1284"/>
-                <img src="1d51fda9bb4bc6d82254764ee94d34c265c81d5f5cad7047d2d9ea661403809e.png" title=" Example: {user=&quot;&quot;, pass=&quot;&quot;} (completed): <span class='success-color'>SUCCESS</span>" width="1284"/>
+                <img src="1d51fda9bb4bc6d82254764ee94d34c265c81d5f5cad7047d2d9ea661403809e.png" title=" Example: {user=&quot;&quot;, pass=&quot;&quot;} (completed): <span class='error-color'>ERROR</span>" width="1284"/>
             </div>
         </div>
 
